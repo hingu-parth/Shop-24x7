@@ -1,0 +1,53 @@
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <a> <img src="{{product.image}}" alt="{{product.name}}" style="width: 70%; height: 50%; margin: 20px 0px" > </a>
+      </div>
+    </div>
+  <div class="col">
+      <div class="card-body">
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <div class="col mx-auto my-1">
+            <h1 class="display-4 fw-normal">{{product.name}}</h1> <br>
+            <div style="width: 80%; margin-left: auto; margin-right: auto;">
+              <p class="lead fw-normal fst-italic">{{product.description}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center" style="width: 80%; margin-left: auto; margin-right: auto">
+          <h3 class="text-bold">Price: ${{product.price}}</h3>
+          <div class="btn-group">
+            <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click) = "addToCart(product)">Add to Cart</button>
+            </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+
+  <div class="text-center text-warning" style="padding:1%;"> <h1>Recommended Products</h1></div>
+  <!-- Products -->
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div *ngFor ="let product of recProdList">
+        <div class="col">
+          <div class="card shadow-sm" style="border-radius: 10px;">
+            <a [routerLink]="['/product-listing']" class="text-decoration-none">
+            <img src="{{product.image}}" style="width: 100%; height: 100%" >    </a>
+            <div class="card-body">
+              <div class="card-text">
+                <a [routerLink]="['/product-listing', product._id]" class="text-decoration-none link-dark"> <h5>{{product.name}}</h5> <br> </a>
+              </div>
+                 
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="text-bold">Price: ${{product.price}}</h5>
+                  <div class="btn-group">
+                    <a [routerLink]="['/product-listing', product._id]" class="text-decoration-none px-2"> <button type="button" class="btn btn-md btn-primary">View Details</button> </a>
+                    <button type="button" class="btn btn-md btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click) = "addToCart(product)">Add to Cart</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> 

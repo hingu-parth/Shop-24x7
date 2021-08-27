@@ -1,0 +1,302 @@
+{
+  "users": [
+    {
+      "email": "asd@zxc.com",
+      "password": "12345678",
+      "user_type": "normal",
+      "id": 1
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "email": "ava@123.co",
+      "password": "Hello1234",
+      "user_type": "admin"
+    },
+    {
+      "email": "asd@zxc.com",
+      "password": "123456",
+      "user_type": "admin",
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Laptops",
+      "image": "https://www.werd.com/wp-content/uploads/2018/01/dell-xps-13-laptop-1200x675.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mobile Phones",
+      "image": "https://www.xda-developers.com/files/2020/05/HUAWEI-P30-Pro-NEW-EDITION-1200x675-1-1024x576.jpg"
+    },
+    {
+      "id": 3,
+      "name": "TVs & Projectors",
+      "image": "https://cdn57.androidauthority.net/wp-content/uploads/2020/06/LG-C9PUB-77-inch-Class-OLED-HDR-4K-UHD-Smart-TV-1200x675.png"
+    },
+    {
+      "id": 4,
+      "name": "Tablets",
+      "image": "https://thumbor.forbes.com/thumbor/711x399/https://blogs-images.forbes.com/forbes-finds/files/2019/02/12-9-ipad-pro-1200x675.jpg?width=960"
+    },
+    {
+      "id": 5,
+      "name": "Video Games/VR",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWggJV48po78/v0/1200x675.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Home Appliances",
+      "image": "https://st2.depositphotos.com/1001877/6374/i/600/depositphotos_63745311-stock-photo-home-appliances-gas-cooker-tv.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "category_name": "Laptops",
+      "name": "MacBook Air 13.3 - 8GB Memory - 512GB",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1199.99,
+      "discounted_price": 10,
+      "image": "https://i.gadgets360cdn.com/products/large/macbook-air-m1-2020-db-800x600-1607604365.png",
+      "rating": 1
+    },
+    {
+      "id": 102,
+      "category_name": "Video Games/VR",
+      "name": "Oculus Rift-S - 8GB Memory",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "http://www.vesaro.com/store/pc/catalog/Oculus-Rift-S-Detail.jpg",
+      "rating": 2
+    },
+    {
+      "id": 103,
+      "category_name": "Laptops",
+      "name": "Lenovo ThinkPad X1 - Gen 3",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1199.99,
+      "discounted_price": 10,
+      "image": "https://psrefstuff.lenovo.com/v2/images/classifications/c_laptops.png",
+      "rating": 3
+    },
+    {
+      "id": 104,
+      "category_name": "Mobile Phones",
+      "name": "Google Pixel 5 - 5GB Memory - 128GB",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2020/09/google-pixel-5-official-screenshot-1.jpg",
+      "rating": 4
+    },
+    {
+      "id": 105,
+      "category_name": "Tablets",
+      "name": "iPad Air - 4GB Memory - 256GB ",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1199.99,
+      "discounted_price": 10,
+      "image": "https://www.imore.com/sites/imore.com/files/styles/large/public/field/image/2020/09/ipad-air-2020-hero.jpg",
+      "rating": 5
+    },
+    {
+      "id": 106,
+      "category_name": "Mobile Phones",
+      "name": "OnePlus 8 - 8GB Memory - 128GB ",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "http://www.chiptrolls.com/Images/20200414231313.png",
+      "rating": 6
+    },
+    {
+      "id": 107,
+      "category_name": "Laptops",
+      "name": "Microsoft Surface 3 - 32GB Memory",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1199.99,
+      "discounted_price": 10,
+      "image": "https://www.notebookcheck.net/uploads/tx_nbc2/MicrosoftSurfaceLaptop3-15__2__01.JPG",
+      "rating": 7
+    },
+    {
+      "id": 108,
+      "category_name": "TVs & Projectors",
+      "name": "Samsung Neo QLED 4K",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "https://image-us.samsung.com/SamsungUS/home/televisions-and-home-theater/tvs/neo-gled-4k/qn85a/gallery/02042021/01_QN65QN85AAFXZA_011_Front3_Titan-Black-1600x1200.jpg?$product-details-jpg$",
+      "rating": 8
+    },
+    {
+      "id": 109,
+      "category_name": "Video Games/VR",
+      "name": "Sony - PlayStation 5 Console",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 499.99,
+      "discounted_price": 10,
+      "image": "https://shopee.com.my/blog/wp-content/uploads/2021/05/F50590D1-E299-4317-A7B7-39D12AFB5AC7.jpeg",
+      "rating": 9
+    },
+    {
+      "id": 110,
+      "category_name": "Video Games/VR",
+      "name": "Microsoft - Xbox Series X 1TB Console",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 499.99,
+      "discounted_price": 10,
+      "image": "https://www.allkeyshop.com/blog/wp-content/uploads/xbox-series-x-new-800x600-2.jpg",
+      "rating": 10
+    },
+    {
+      "id": 111,
+      "category_name": "Mobile Phones",
+      "name": "iPhone 12 - 8GB Memory - 128GB ",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "https://static.toiimg.com/photo/msid-84755744,resizemode-4/84755744.cms",
+      "rating": 11
+    },
+    {
+      "id": 112,
+      "category_name": "TVs & Projectors",
+      "name": "Samsung RU7300 4K UHD",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1299.99,
+      "discounted_price": 10,
+      "image": "https://image-us.samsung.com/SamsungUS/home/televisions-and-home-theater/tvs/uhd-tv/ru7300/gallery/01_RU7300-L-Perspective-Black-031519.jpg?$product-details-jpg$",
+      "rating": 12
+    },
+    {
+      "id": 113,
+      "category_name": "TVs & Projectors",
+      "name": "LG 82UP8770 4K UHD",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 979.99,
+      "discounted_price": 10,
+      "image": "https://www.krazykrazy.tv/files/image/attachment/21934/75un73.jpg",
+      "rating": 13
+    },
+    {
+      "id": 114,
+      "category_name": "Tablets",
+      "name": "Galaxy Tab A7 - 64GB",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 154.99,
+      "discounted_price": 10,
+      "image": "https://image-us.samsung.com/SamsungUS/home/mobile/tablets/tab-a7/gallery/10-07-2020/grey/Gallery01-Grey-1600x1200.jpg?$product-details-jpg$",
+      "rating": 14
+    },
+    {
+      "id": 115,
+      "category_name": "Tablets",
+      "name": "Oppo X 2021 - 64GB",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 169.99,
+      "discounted_price": 10,
+      "image": "https://www.androidcentral.com/sites/androidcentral.com/files/styles/large/public/article_images/2020/11/oppo-x-2021-concept.jpg",
+      "rating": 15
+    },
+    {
+      "id": 116,
+      "category_name": "Home Appliances",
+      "name": "Oppo X 2021 - 64GB",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 169.99,
+      "discounted_price": 10,
+      "image": "https://universal.bertazzoni.com/media/cache/img/800/13067_z_F6011PRO-LX.jpg",
+      "rating": 16
+    },
+    {
+      "id": 117,
+      "category_name": "Home Appliances",
+      "name": " LG WM3800HBA 27 5.2 cu.ft - Washer ",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 169.99,
+      "discounted_price": 10,
+      "image": "https://www.krazykrazy.tv/files/image/attachment/7112/WM3800HBA.jpg",
+      "rating": 17
+    },
+    {
+      "id": 118,
+      "category_name": "Home Appliances",
+      "name": "Samsung 28 cu.ft.- Refrigerator - Stainless Steel",
+      "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+      "price": 1799.99,
+      "discounted_price": 10,
+      "image": "https://image-us.samsung.com/SamsungUS/home/home-appliances/refrigerators/3-door-french-door/pdp/rf28t5001/rf28t5001sr-aa/gallery/RF28T5001SR_01_Silver_Scom.jpg?$product-details-jpg$",
+      "rating": 18
+    },
+    {
+      "name": "Mouse",
+      "price": "45.99",
+      "discountedPrice": "2.75",
+      "category_name": "TVs & Projectors",
+      "image": "watermlon.jpg",
+      "description": "this lets you navigate a website",
+      "rating": "9",
+      "id": 119
+    }
+  ],
+  "cart": [
+    [
+      {
+        "id": 103,
+        "category_name": "Laptops",
+        "name": "Lenovo ThinkPad X1 - Gen 3",
+        "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+        "price": 1199.99,
+        "discounted_price": 10,
+        "image": "https://psrefstuff.lenovo.com/v2/images/classifications/c_laptops.png",
+        "rating": 3
+      },
+      {
+        "id": 107,
+        "category_name": "Laptops",
+        "name": "Microsoft Surface 3 - 32GB Memory",
+        "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+        "price": 1199.99,
+        "discounted_price": 10,
+        "image": "https://www.notebookcheck.net/uploads/tx_nbc2/MicrosoftSurfaceLaptop3-15__2__01.JPG",
+        "rating": 7
+      },
+      {
+        "id": 101,
+        "category_name": "Laptops",
+        "name": "MacBook Air 13.3 - 8GB Memory - 512GB",
+        "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+        "price": 1199.99,
+        "discounted_price": 10,
+        "image": "https://i.gadgets360cdn.com/products/large/macbook-air-m1-2020-db-800x600-1607604365.png",
+        "rating": 1
+      },
+      {
+        "id": 102,
+        "category_name": "Video Games/VR",
+        "name": "Oculus Rift-S - 8GB Memory",
+        "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+        "price": 979.99,
+        "discounted_price": 10,
+        "image": "http://www.vesaro.com/store/pc/catalog/Oculus-Rift-S-Detail.jpg",
+        "rating": 2
+      },
+      {
+        "id": 101,
+        "category_name": "Laptops",
+        "name": "MacBook Air 13.3 - 8GB Memory - 512GB",
+        "description": "Apple’s thinnest and lightest notebook gets supercharged with the Apple M1 chip. Tackle your projects with the blazing-fast 8-core CPU. Take graphics-intensive apps and games to the next level with the 7-core GPU. And accelerate machine learning tasks with the 16-core Neural Engine. All with a silent, fanless design and the longest battery life ever — up to 18 hours.¹ MacBook Air. Still perfectly portable. Just a lot more powerful.",
+        "price": 1199.99,
+        "discounted_price": 10,
+        "image": "https://i.gadgets360cdn.com/products/large/macbook-air-m1-2020-db-800x600-1607604365.png",
+        "rating": 1
+      }
+    ]
+  ]
+}

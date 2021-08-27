@@ -1,0 +1,50 @@
+
+
+
+<div class="card">
+    <div class="card-header">
+        Edit Order 
+    </div>
+    <div class="card-body">
+        <form>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>Id : </th>
+                        <td>{{ order._id }}</td>
+                    </tr>
+                    <tr>
+                        <th>Date : </th>
+                        <td>{{ order.orderPlacedOn }}</td>
+                    </tr>
+                    <tr>
+                        <th>Email : </th>
+                        <td>{{ order.email }}</td>
+                    </tr>
+                    <tr>
+                        <th>No. Items : </th>
+                        <td>{{ order.cart.length }}</td>
+                    </tr>
+                    <tr>
+                        <th>Total : </th>
+                        <td>{{ order.total | currency}}</td>
+                    </tr>
+                    <tr>
+                        <th>Status : </th>
+                        <td>
+                            <select class="form-select" aria-label="Default select example" name="isDelivered" id="category" [(ngModel)]="order.isDelivered">
+                                <option value="true">Delivered</option>
+                                <option value="false">Not Delivered</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-outline-primary col-12 mt-3" (click)="editOrder()">Submit Changes</button>
+        </form>
+    </div>
+    <div class="card-footer">
+        <a routerLink='/orders' class="btn btn-secondary my-2">Go Back</a>
+    </div>
+</div>
+

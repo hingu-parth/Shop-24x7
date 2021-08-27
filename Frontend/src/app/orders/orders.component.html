@@ -1,0 +1,40 @@
+<br><br><br>
+
+<h1>Orders </h1>
+
+<table class="table table-striped table-bordered">
+
+<thead>
+<tr>
+    <th>Id</th>
+    <th>Total</th>
+    <th>Email</th>
+    <th>Date</th>
+    <th>Status</th>
+    <th>No. Items</th>
+    <th>Action</th>
+</tr>
+</thead>
+
+
+<tbody>
+    <tr *ngFor="let order of orders">
+        <td>{{order._id}}</td>
+        <td>{{order.total | currency}}</td>
+        <td>{{order.email}}</td>
+        <td>{{order.orderPlacedOn }}</td>
+        <td *ngIf="order.isDelivered">Delivered</td>
+        <td *ngIf="!order.isDelivered">Not Delivered</td>
+        <td>{{order.cart.length}}</td>
+        <td>    
+            <div>
+                <a [routerLink]="['/admin/edit-order', order._id]" class="btn btn-sm btn-outline-success">Edit Order</a> | 
+                <button (click)="deleteOrder(order._id)" class="btn btn-sm btn-outline-danger">Delete Order</button>
+            </div>
+        </td>
+    </tr>
+
+</tbody>
+
+
+</table>

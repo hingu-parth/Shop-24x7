@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="main-body">
+    <div class="row gutters-sm">
+      <div class="col-md-2 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-colum align-items-center text-center">
+              <img
+                src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                alt="Admin"
+                class="rounded-circle"
+                width="150"
+                style="margin-left: auto; margin-right: auto"
+              />
+              <!-- <div class="mt-3">
+                            </div> -->
+            </div>
+            <h4 class="pt-4 align-items-center text-center">
+              {{ profile.firstName }} {{ profile.lastName }}
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3"><h6 class="mb-0">Full Name</h6></div>
+              <div class="col-sm-9 text-secondary">
+                {{ profile.firstName }} {{ profile.lastName }}
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3"><h6 class="mb-0">Email</h6></div>
+              <div class="col-sm-9 text-secondary">{{ profile.username }}</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3"><h6 class="mb-0">Phone</h6></div>
+              <div class="col-sm-9 text-secondary">{{ profile.phone }}</div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3"><h6 class="mb-0">Address</h6></div>
+              <div class="col-sm-9 text-secondary">
+                {{ profile.address }}
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12 d-flex justify-content-betwen">
+                <a class="btn btn-outline-warning me-2" (click)="editProfile()">
+                  Edit Profile</a
+                >
+                <button
+                  class="btn btn-outline-secondary"
+                  type="submit"
+                  (click)="goBack()"
+                >
+                  Go Back
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 order-md-last">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-primary">Your cart</span>
+          <span class="badge bg-primary rounded-pill">{{ totalProducts }}</span>
+        </h4>
+        <ul class="list-group mb-3" *ngFor="let product of products">
+          <li class="list-group-item d-flex justify-content-between lh-sm">
+            <div>
+              <h6 class="my-0">{{ product.name | titlecase }}</h6>
+              <small class="text-muted"
+                >{{ product.description }} | {{ product.rating }}</small
+              >
+            </div>
+            <span class="text-muted">{{ product.price | currency }}</span>
+          </li>
+        </ul>
+        <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>{{ total | currency }}</strong>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

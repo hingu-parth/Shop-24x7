@@ -1,0 +1,32 @@
+
+
+<div class="card">
+    <div class="card-header">
+        Edit User
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="username" class="form-label">Email</label>
+                <input type="text" class="form-control" name="username" [(ngModel)]="user.username" placeholder="User Email">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" class="form-control" name="password" [(ngModel)]="user.password" placeholder="User Password">
+            </div>
+            <div class="mb-3">
+                <label for="user_type" class="form-label">User Access</label>
+                <select class="form-select" aria-label="Default select example" name="user_type" id="user_type" [(ngModel)]="user.user_type">
+                    <option value="normal">Normal</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <!-- <input type="text" class="form-control" name="category" [(ngModel)]="product.category_name" placeholder="Category"> -->
+            </div>
+
+            <button class="btn btn-outline-primary col-12 mt-3" (click)="editUser()">Edit User</button>
+        </form>
+    </div>
+    <div class="card-footer">
+        <a routerLink='/users' class="btn btn-secondary my-2">Go Back</a>
+    </div>
+</div>

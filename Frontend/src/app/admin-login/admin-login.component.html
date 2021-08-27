@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="login">
+  <form [formGroup]="adminLogin" class="form-group">
+        <h1>Admin Login</h1>
+
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input type="text" formControlName="username" name="username" class="form-control" [(ngModel)]="admin.username"
+          [ngClass]="{'is-invalid': f.username.touched && f.username.invalid }">
+          <div *ngIf="f.username.touched && f.username.invalid" class="invalid-feedback">
+            <div *ngIf="f.username.errors?.required">email is required</div>
+        </div> 
+        </div>
+  
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" formControlName="password" name="password" class="form-control" [(ngModel)]="admin.password"
+          [ngClass]="{ 'is-invalid': f.password.touched && f.password.invalid }">
+          <div *ngIf="f.password.touched && f.password.invalid" class="invalid-feedback">
+            <div *ngIf="f.password.errors?.required">Password is required</div>
+        </div> 
+        </div>
+  
+        <div class="form-group">
+          <button (click)="login()" class="btn btn-success">Submit</button> 
+        </div>
+        </form>
+      </div>
+  
+    </div>
+    <div class="col-md-4"></div>
+  
+  </div>

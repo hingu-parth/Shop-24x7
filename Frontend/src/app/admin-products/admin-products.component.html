@@ -1,0 +1,20 @@
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <h2 class="display-3 mb-5">Products</h2>
+    <a routerLink='/admin/addProduct' class="btn btn-outline-primary mb-3 mr-3">Add Product</a>
+</div>
+
+<ul  class="col-12 list-group list-group-flush">
+    <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let product of productList">
+        <div>
+            <p class="mb-0" style="font-size: 1.3rem;">{{ product.name }} </p>
+            
+            <p class="text-muted">{{ product.price | currency }}</p>
+        </div>
+        <div>
+            <a [routerLink]="['/admin/editProduct', product._id]" class="btn btn-sm btn-outline-success">Edit Product</a> | 
+            <button (click)="deleteProduct(product._id)" class="btn btn-sm btn-outline-danger">Delete Product</button>
+        </div>
+    </li>
+</ul>
